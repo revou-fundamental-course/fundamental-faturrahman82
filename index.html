@@ -3,13 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Portofolio Maul</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <!-- header - navigation -->
-  <header></header>
-  <!-- content -->
-  <body></body>
+  <body>
+    <main>
+      <!-- header - navigation -->
+      <header class="nav-container">
+        <div>
+          <img
+            class="img-logo"
+            src="img/José Luis Patiño (PAT) PATGANS design.jpeg"
+            alt=""
+          />
+        </div>
+
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#our-profile">Our Profile</a>
+          <a href="#portofolio">Portofolio</a>
+          <a href="#message-us">Message Us</a>
+        </nav>
+      </header>
+      <hr />
+      <!-- Home content -->
+      <section id="home">
+        <header>
+          <div class="home-content">
+            <h1>My User, Welcome to Website</h1>
+            <p class="paragraft-home">Ini adalah Website Portofolio saya</p>
+          </div>
+          <article>
+            <dir class="banner-img"></dir>
+          </article>
+        </header>
+      </section>
+      <hr />
+
+      <!-- profile content -->
+      <section id="our-profile">
+        <div class="myProfile-content">
+          <header>
+            <h1>My Profile</h1>
+          </header>
+
+          <article class="profile-content">
+            <div class="profile-item">
+              <img class="profile-icon" src="img/Jayapura city.jpeg" alt="" />
+              <p>Jayapura</p>
+            </div>
+            <div class="profile-item">
+              <img class="profile-icon" src="img/Telaga sarangan.jpeg" alt="" />
+              <p>Magetan</p>
+            </div>
+            <div class="profile-item">
+              <img
+                class="profile-icon"
+                src="img/The Creative Series.jpeg"
+                alt=""
+              />
+              <p>Jepang</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- portofolio content -->
+      <section class="porto-content" id="portofolio">
+        <header>
+          <h1>My Portofolio</h1>
+        </header>
+        <article class="article-portofolio">
+          <div class="portofolio-img">
+            <img src="img/img2.png" alt="" />
+            <p>Kopi kenangan</p>
+          </div>
+          <div class="portofolio-img2">
+            <img src="img/im3.png" alt="" />
+            <p>Pemandangan</p>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <!-- message content -->
+      <section class="message-wrapping" id="message-us">
+        <header>
+          <h1>Message Us</h1>
+        </header>
+        <div class="message">
+          <div class="message-content">
+            <form class="form-content" action="">
+              <div class="form-name">
+                <label for="name">Nama:</label>
+                <input placeholder="Nama" type="text" />
+              </div>
+              <div class="form-date">
+                <label for="date">Tanggal Lahir:</label>
+                <input type="date" />
+              </div>
+              <div class="gender-selection">
+                <label for="gender">Jenis Kelamin:</label>
+                <label>
+                  <input type="radio" name="gender" value="male" />
+                  Laki-laki
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="female" />
+                  Perempuan
+                </label>
+              </div>
+              <div class="message-selection">
+                <label for="pesan">Pesan:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Tulis pesan Anda di sini..."
+                ></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="receive-form">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A illum
+              porro suscipit velit quis enim consequatur et ipsum ad sapiente?
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <hr />
   <!-- footer -->
-  <footer></footer>
+  <footer>
+    <p>Create By Maulvi</p>
+  </footer>
 </html>

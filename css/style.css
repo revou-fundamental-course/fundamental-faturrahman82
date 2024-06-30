@@ -1,0 +1,212 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f0f8ff; /* Light blue background color */
+}
+
+h1 {
+  padding-left: 2rem;
+}
+
+/* nav */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: rgb(173, 216, 230);
+}
+
+.img-logo {
+  width: 2.8rem;
+  border-radius: 50%;
+}
+
+nav > a {
+  padding: 0 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* home-content */
+.paragraft-home {
+  padding: 1rem;
+}
+
+.banner-img {
+  margin: 0.5rem 1em;
+  height: 19rem;
+  border: 1px solid;
+}
+
+/* our profile */
+.myProfile-content {
+  margin: 2rem 0;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.profile-item {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-icon {
+  height: 8rem;
+  width: 8rem;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* portfolio */
+.article-portofolio {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.porto-content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portofolio-img,
+.portofolio-img2 {
+  height: 15rem;
+  width: 30rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.portofolio-img img,
+.portofolio-img2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* message-content */
+.message-wrapping {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.message {
+  display: flex;
+  gap: 2rem;
+}
+
+.message-content {
+  margin-bottom: 2rem;
+}
+
+.form-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  max-width: 100%;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.form-name,
+.form-date,
+.gender-selection,
+.message-selection {
+  margin-bottom: 1.5rem;
+}
+
+.form-name label,
+.form-date label,
+.gender-selection label,
+.message-selection label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-name input,
+.form-date input,
+.gender-selection input,
+.message-selection textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.receive-form {
+
+  border: 1px  solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  height: 33.5rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.gender-selection {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.gender-selection label {
+  font-weight: normal;
+}
+
+.gender-selection input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: end;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
