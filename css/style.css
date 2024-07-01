@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
 
 h1 {
   padding-left: 2rem;
+  font-size: 2rem;
 }
 
 /* nav */
@@ -23,24 +25,38 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: rgb(173, 216, 230);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .img-logo {
-  width: 2.8rem;
+  width: 4rem;
   border-radius: 50%;
 }
 
 nav > a {
   padding: 0 32px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: black;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav > a:hover {
+  color: white; /* Text color on hover */
+  background-color: rgb(115, 255, 255); /* Bright background color on hover */
+  border-radius: 5px; /* Optional: add some rounding to the background */
 }
 
 /* home-content */
+.home-content {
+  margin-top: 2rem;
+  height: 100vh;
+  padding-top: 4.5rem;
+}
 .paragraft-home {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .banner-img {
@@ -52,53 +68,64 @@ nav > a {
 /* our profile */
 .myProfile-content {
   margin: 2rem 0;
+  height: 100vh;
+  padding-top: 6rem;
 }
 
 .profile-content {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  align-content: center;
+  height: 100%;
 }
 
 .profile-item {
   align-items: center;
   justify-content: center;
   text-align: center;
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .profile-icon {
-  height: 8rem;
-  width: 8rem;
+  height: 15rem;
+  width: 15rem;
   border: 1px solid;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* portfolio */
 .article-portofolio {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Menyelaraskan gambar secara horizontal ke tengah */
+  align-items: center; /* Menyelaraskan gambar secara vertikal ke tengah */
   margin-bottom: 4rem;
   margin-top: 2rem;
+  height: 70vh;
+  text-align: center;
+  gap: 2rem;
 }
 
-.porto-content{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.porto-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 100vh;
+  padding-top: 6rem;
 }
 
 .portofolio-img,
 .portofolio-img2 {
-  height: 15rem;
-  width: 30rem;
+  height: 25rem;
+  width: 45rem;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .portofolio-img img,
@@ -112,6 +139,8 @@ nav > a {
 .message-wrapping {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  height: 100vh;
+  padding-top: 6rem;
 }
 
 .message {
@@ -128,7 +157,7 @@ nav > a {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30rem;
+  width: 35rem;
   max-width: 100%;
   margin-top: 2rem;
   margin-left: 4rem;
@@ -162,18 +191,66 @@ nav > a {
 }
 
 .receive-form {
-
-  border: 1px  solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-  border-radius: 10px;
+  border: 1px solid #ccc; /* Change border color to a visible grey */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   background-color: #fff;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30rem;
-  height: 33.5rem;
+  width: 48rem;
+  height: 33.65rem;
   margin-top: 2rem;
   margin-left: 4rem;
+  overflow: auto; /* Add overflow to enable scrolling */
+  display: grid;
+  gap: 1rem;
+}
+
+
+.receive-form label,
+.receive-form input,
+.receive-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.receive-form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.receive-form input,
+.receive-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.receive-form textarea {
+  height: 100px; /* Adjust height as needed */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.border-message {
+  border-radius: 1rem;
+  border: 1px solid black;
+  height: 12rem;
+  width: 43rem;
+  box-sizing: border-box;
+  overflow: auto; /* Ensure content does not overflow the border */
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+.border-message h3 {
+  margin-bottom: 0.5rem;
+}
+
+.border-message p {
+  margin-bottom: 0.5rem;
+
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis to overflowing text */
 }
 
 .gender-selection {
