@@ -191,7 +191,7 @@ nav > a:hover {
 }
 
 .receive-form {
-  border: 1px solid #ccc; /* Change border color to a visible grey */
+  border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: #fff;
@@ -200,7 +200,7 @@ nav > a:hover {
   height: 33.65rem;
   margin-top: 2rem;
   margin-left: 4rem;
-  overflow: auto; /* Add overflow to enable scrolling */
+  overflow: auto; 
   display: grid;
   gap: 1rem;
 }
@@ -240,6 +240,7 @@ nav > a:hover {
   box-sizing: border-box;
   overflow: auto; /* Ensure content does not overflow the border */
   padding: 1rem; /* Add padding for better spacing */
+  margin-bottom: 1rem;
 }
 
 .border-message h3 {

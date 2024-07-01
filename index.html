@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Maul</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
     <main>
@@ -94,14 +95,19 @@
         </header>
         <div class="message">
           <div class="message-content">
-            <form class="form-content" action="">
+            <form
+              class="form-content"
+              id="form"
+              action="message-server"
+              method="POST"
+            >
               <div class="form-name">
                 <label for="name">Nama:</label>
-                <input placeholder="Nama" type="text" />
+                <input placeholder="Nama" type="text" id="name" name="name" />
               </div>
               <div class="form-date">
                 <label for="date">Tanggal Lahir:</label>
-                <input type="date" />
+                <input type="date" id="date" name="date" />
               </div>
               <div class="gender-selection">
                 <label for="gender">Jenis Kelamin:</label>
@@ -127,12 +133,7 @@
             </form>
           </div>
           <div class="receive-form">
-            <div class="border-message">
-              <p><b>Current time :</b>1-1-2005</p>
-              <p><b>Nama :</b>Maulvi<p>
-              <p><b>Jenis Kelamin :</b>Laki-laki</p>
-              <p><b>Pesan :</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magni!</p>
-            </div>
+            <div id="messages-container"></div>
           </div>
         </div>
       </section>
