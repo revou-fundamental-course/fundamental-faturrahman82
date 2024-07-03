@@ -10,8 +10,12 @@
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: 1px;
+}
+
 body {
-  background-color: #f0f8ff; /* Light blue background color */
+  background-color: #f0f8ff; 
 }
 
 h1 {
@@ -57,12 +61,14 @@ nav > a:hover {
 }
 .paragraft-home {
   padding: 2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.banner-img {
-  margin: 0.5rem 1em;
-  height: 19rem;
-  border: 1px solid;
+.banner-img .img-home{
+  margin-left: 1rem;
+  height: 30rem;
+  width: 98%;
 }
 
 /* our profile */
@@ -196,13 +202,17 @@ nav > a:hover {
   border-radius: 5px;
   background-color: #fff;
   padding: 2rem;
-  width: 48rem;
+  width: 47rem;
   height: 33.65rem;
   margin-top: 2rem;
   margin-left: 4rem;
   overflow: auto; 
   display: grid;
   gap: 1rem;
+}
+
+.receive-form::-webkit-scrollbar{
+  width: 1px;
 }
 
 
@@ -236,7 +246,7 @@ nav > a:hover {
   border-radius: 1rem;
   border: 1px solid black;
   height: 12rem;
-  width: 43rem;
+  width: 41rem;
   box-sizing: border-box;
   overflow: auto; /* Ensure content does not overflow the border */
   padding: 1rem; /* Add padding for better spacing */

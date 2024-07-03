@@ -59,3 +59,17 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("form").reset();
       });
   });
+
+  const images = [
+    '../img/Blue Purple Abstract Pastel Coming Soon Banner (1).png',
+  '../img/Blue Purple Abstract Pastel Coming Soon Banner.png']
+
+  let currentIndex = 0;
+
+  function changesImage() {
+    const imgElement = document.querySelector('.img-home');
+    currentIndex = (currentIndex + 1) % images.length;
+    imgElement.src = images[currentIndex];
+  }
+
+  setInterval(changesImage, 2000)
