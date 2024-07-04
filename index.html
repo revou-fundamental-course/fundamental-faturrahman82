@@ -36,7 +36,10 @@
           </div>
           <article>
             <div class="banner-img">
-              <img class="img-home" src="img/Blue Purple Abstract Pastel Coming Soon Banner.png" alt="Selamat datang">
+              <div class="slider">
+                <img class="img-home" src="img/Blue Purple Abstract Pastel Coming Soon Banner.png" alt="Selamat datang">
+              <img class="img-home" src="img/Blue Purple Abstract Pastel Coming Soon Banner (1).png" alt="Selamat datang">
+              </div>
             </div>
           </article>
         </header>
@@ -105,20 +108,21 @@
             >
               <div class="form-name">
                 <label for="name">Nama:</label>
-                <input placeholder="Nama" type="text" id="name" name="name" />
+                <input placeholder="Nama" type="text" id="name" name="name" required/>
               </div>
               <div class="form-date">
                 <label for="date">Tanggal Lahir:</label>
-                <input type="date" id="date" name="date" />
+                <input type="date" id="date" name="date" required/>
+                
               </div>
               <div class="gender-selection">
                 <label for="gender">Jenis Kelamin:</label>
                 <label>
-                  <input type="radio" name="gender" value="male" />
+                  <input type="radio" name="gender" value="male" required/>
                   Laki-laki
                 </label>
                 <label>
-                  <input type="radio" name="gender" value="female" />
+                  <input type="radio" name="gender" value="female" required/>
                   Perempuan
                 </label>
               </div>
@@ -129,6 +133,7 @@
                   id="message"
                   rows="4"
                   placeholder="Tulis pesan Anda di sini..."
+                  required
                 ></textarea>
               </div>
               <button type="submit">Submit</button>
